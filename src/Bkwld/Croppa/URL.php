@@ -161,7 +161,8 @@ class URL {
 		if (!preg_match('#'.$this->config['path'].'#', $path, $matches)) {
 			throw new Exception("$url doesn't match `{$this->config['path']}`");
 		}
-		return $matches[1];
+		$a = str_replace($this->config['url_prefix_images'], '', $path);
+		return $a;
 	}
 
 	/**

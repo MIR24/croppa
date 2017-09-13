@@ -68,6 +68,8 @@
 	 */
 	'ignore' => '\.(?:gif|GIF)$',
 
+	'url_prefix_images' => 'uploads/',
+
 	/**
 	 * A string that is prepended to the path captured by the `path` pattern
 	 * (above) that is used to from the URL to crops.
